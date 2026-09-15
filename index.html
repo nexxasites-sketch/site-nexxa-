@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXXA — Crie seu site</title><meta name="description" content="Crie seu site profissional com a NEXXA. Simule, personalize e explore exemplos.">
+<link rel="icon" href="assets/nexxa-logo.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a class="brand" href="#"><img src="assets/nexxa-logo.png" alt="NEXXA"><span>NEXXA</span></a>
+<nav class="nav" id="nav"><a href="#simulador">Simulador</a><a href="#exemplos">Exemplos</a><a href="#como">Como funciona</a><a href="#faq">FAQ</a><a class="nav-btn" href="#simulador">Criar meu site</a></nav>
+<button class="menu" id="menuBtn" aria-label="Menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<span class="kicker">Seu próximo site começa aqui</span>
+<h1>Seu negócio merece um site com <span class="gradient">presença.</span></h1>
+<p class="lead">Escolha seu plano, personalize o projeto e veja uma estimativa na hora. Sem complicação, sem cara de template.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#simulador">Simular meu site →</a><a class="btn btn-dark" href="#exemplos">Explorar exemplos</a></div>
+<div class="hero-proof"><span><b>3 planos</b> para diferentes fases</span><span><b>Personalização</b> de verdade</span><span><b>Visual premium</b> e responsivo</span></div>
+</div>
+<div class="hero-art"><div class="orb"></div><div class="art-card"><div class="art-screen"><div class="art-copy"><small>NEXXA / DIGITAL EXPERIENCE</small><strong>Ideia → site → presença.</strong></div></div></div><div class="mini-float"><b>+20% OFF</b><span>desconto aplicado no simulador</span></div></div>
+</div></section>
+
+<section class="section alt" id="simulador"><div class="container">
+<div class="section-head"><div><span class="eyebrow">MONTE AGORA</span><h2>Crie seu site do seu jeito.</h2></div><p>O simulador fica aqui no começo porque você já pode descobrir o que cabe no seu projeto antes de qualquer conversa.</p></div>
+<div class="builder"><div class="builder-main">
+<div class="steps"><span class="active" data-step-dot="1">1</span><i></i><span data-step-dot="2">2</span><i></i><span data-step-dot="3">3</span><i></i><span data-step-dot="4">4</span></div>
+<div class="step-panel active" data-step="1"><h3>Escolha seu plano</h3><p class="muted">Comece pela estrutura que mais combina com o momento do seu negócio.</p>
+<div class="option-grid">
+<label class="choice"><input type="radio" name="plan" value="essencial"><span><b>Essencial</b><small>R$ 399,99 • manutenção R$ 75/mês</small></span></label>
+<label class="choice"><input type="radio" name="plan" value="profissional" checked><span><b>Profissional</b><small>R$ 599,99 • manutenção R$ 117/mês</small></span></label>
+<label class="choice"><input type="radio" name="plan" value="avancado"><span><b>Avançado</b><small>R$ 799,99 • manutenção R$ 150/mês</small></span></label>
+</div><button class="btn btn-blue" data-next="2">Continuar →</button></div>
+
+<div class="step-panel" data-step="2"><h3>Personalize</h3><p class="muted">Adicione recursos sem perder o controle do orçamento.</p>
+<div class="extras">
+<label><input type="checkbox" data-extra="mapa"><span>Mapa / localização<small>+ R$ 49,99</small></span></label>
+<label><input type="checkbox" data-extra="feedback"><span>Feedbacks / depoimentos<small>+ R$ 69,99</small></span></label>
+<label><input type="checkbox" data-extra="catalogo"><span>Catálogo de produtos<small>+ R$ 59,99</small></span></label>
+<label><input type="checkbox" data-extra="agendamento"><span>Agendamento<small>+ R$ 299,99</small></span></label>
+<label><input type="checkbox" data-extra="whatsapp"><span>WhatsApp<small>+ R$ 29,99</small></span></label>
+<label><input type="checkbox" data-extra="instagram"><span>Instagram<small>+ R$ 29,99</small></span></label>
+<label><input type="checkbox" data-extra="faq"><span>FAQ<small>+ R$ 159,99</small></span></label>
+<label><input type="checkbox" data-extra="galeria"><span>Galeria<small>+ R$ 189,99</small></span></label>
+<label><input type="checkbox" data-extra="pagina"><span>Página adicional<small>+ R$ 39,99 cada</small></span><input class="qty" data-qty="pagina" type="number" min="1" max="20" value="1"></label>
+<label class="domain-option"><input id="domainCheck" type="checkbox"><span>Quero domínio próprio<small>serviço de configuração + R$ 100,00 (custo do domínio separado)</small></span></label>
+</div><div class="nav-actions"><button class="btn btn-dark" data-prev="1">← Voltar</button><button class="btn btn-blue" data-next="3">Continuar →</button></div></div>
+
+<div class="step-panel" data-step="3"><h3>Conte sobre o projeto</h3><p class="muted">Essas informações ajudam a NEXXA a entender o que você quer criar.</p>
+<div class="form-grid"><label>Nome do negócio *<input id="company" required placeholder="Ex.: Studio Aurora"></label><label>Seu nome *<input id="person" required placeholder="Ex.: Maria"></label><label>Tipo de negócio *<input id="businessType" required placeholder="Ex.: Salão de beleza"></label><label>Instagram<input id="instagram" placeholder="@seunegocio"></label><label class="full-field">O que você imagina para o site?<textarea id="idea" placeholder="Conte brevemente sobre seu estilo, serviços e objetivo..."></textarea></label></div>
+<div class="nav-actions"><button class="btn btn-dark" data-prev="2">← Voltar</button><button class="btn btn-blue" data-next="4">Ver meu orçamento →</button></div></div>
+
+<div class="step-panel" data-step="4"><h3>Seu orçamento está pronto.</h3><p class="muted">É uma estimativa para você entender o investimento. O projeto final é alinhado com a NEXXA.</p>
+<div class="summary-box" id="summaryBox"></div>
+<div class="nav-actions"><button class="btn btn-dark" data-prev="3">← Ajustar</button><button class="btn btn-blue" id="copyQuote">Copiar orçamento</button></div>
+<div style="margin-top:12px"><button class="btn btn-primary" id="instagramQuote">Quero conversar com a NEXXA →</button></div></div>
+</div>
+<aside class="price-panel"><span class="label">ESTIMATIVA ATUAL</span><strong id="liveTotal">R$ 479,99</strong><span id="liveMaintenance">+ R$ 117,00/mês</span><div class="discount">20% DE DESCONTO APLICADO</div><div class="live-details" id="liveDetails">Profissional</div></aside></div>
+</div></section>
+
+<section class="section" id="exemplos"><div class="container">
+<div class="section-head"><div><span class="eyebrow">EXEMPLOS</span><h2>Veja o que pode sair daqui.</h2></div><p>Cada cartão abre uma prévia. Dentro dela, você pode ver o mini-site completo em uma página separada.</p></div>
+<div class="showcase-grid">
+<button class="show-card" data-demo="Barbearia"><div class="demo demo-barber"><div class="demo-copy"><b>BARBEARIA</b><span>Estilo que começa no detalhe.</span></div></div><div class="show-info"><strong>Barbearia</strong><small>Visual urbano e sofisticado →</small></div></button>
+<button class="show-card" data-demo="Restaurante"><div class="demo demo-food"><div class="demo-copy"><b>RESTAURANTE</b><span>Sabor que merece ser visto.</span></div></div><div class="show-info"><strong>Restaurante</strong><small>Experiência + cardápio →</small></div></button>
+<button class="show-card" data-demo="Oficina"><div class="demo demo-auto"><div class="demo-copy"><b>OFICINA</b><span>Seu carro em boas mãos.</span></div></div><div class="show-info"><strong>Oficina</strong><small>Serviço + confiança →</small></div></button>
+<button class="show-card" data-demo="Salão"><div class="demo demo-salon"><div class="demo-copy"><b>SALÃO</b><span>Beleza em cada detalhe.</span></div></div><div class="show-info"><strong>Salão de beleza</strong><small>Elegância + agendamento →</small></div></button>
+<button class="show-card" data-demo="Loja"><div class="demo demo-shop"><div class="demo-copy"><b>LOJA</b><span>Seu próximo favorito está aqui.</span></div></div><div class="show-info"><strong>Loja</strong><small>Produtos + conversão →</small></div></button>
+</div></div></section>
+
+<section class="section alt" id="como"><div class="container"><div class="section-head"><div><span class="eyebrow">SEM COMPLICAÇÃO</span><h2>Do primeiro clique ao site publicado.</h2></div></div><div class="feature-grid"><article class="feature"><span class="num">01 / ESCOLHA</span><h3>Você começa pelo simulador.</h3><p>Escolhe o plano e os recursos que realmente precisa.</p></article><article class="feature"><span class="num">02 / PERSONALIZE</span><h3>O projeto ganha sua identidade.</h3><p>Visual, conteúdo e estrutura são adaptados ao seu negócio.</p></article><article class="feature"><span class="num">03 / PUBLICAÇÃO</span><h3>Seu site vai para a internet.</h3><p>Você recebe uma experiência pronta para apresentar sua marca.</p></article></div></div></section>
+
+<section class="section"><div class="container"><div class="cta"><div><span class="eyebrow">PRONTO?</span><h2>Seu negócio pode começar com um site que parece grande.</h2><p>Monte uma estimativa agora e veja exemplos antes de decidir.</p></div><a class="btn btn-primary" href="#simulador">Começar agora →</a></div></div></section>
+
+<section class="section" id="faq"><div class="container"><div class="section-head"><div><span class="eyebrow">FAQ</span><h2>Perguntas rápidas.</h2></div></div><div class="faq">
+<details><summary>O preço do simulador é definitivo?</summary><p>Não. Ele é uma estimativa para facilitar sua decisão. O projeto final pode ser ajustado conforme escopo, conteúdo e necessidades.</p></details>
+<details><summary>Posso escolher recursos adicionais?</summary><p>Sim. O simulador recalcula o valor conforme você adiciona ou remove recursos.</p></details>
+<details><summary>Os exemplos são sites separados?</summary><p>Sim. Cada exemplo possui seu próprio arquivo HTML dentro da pasta “exemplos” e abre como uma página independente.</p></details>
+<details><summary>O site funciona no celular?</summary><p>Sim. A estrutura foi feita de forma responsiva para telas grandes e smartphones.</p></details>
+</div></div></section>
+</main>
+
+<footer><div class="container footer-inner"><div class="footer-brand"><img src="assets/nexxa-logo.png" alt=""><span>NEXXA</span></div><div class="footer-links"><a href="#simulador">Simulador</a><a href="#exemplos">Exemplos</a><a href="#faq">FAQ</a><a href="https://www.instagram.com/nexxa.sites/" target="_blank" rel="noopener">Instagram</a></div><small>© <span id="year"></span> NEXXA</small></div></footer>
+
+<div class="modal" id="demoModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Fechar">×</button><span class="eyebrow">DEMONSTRAÇÃO</span><h3 id="modalTitle">Exemplo</h3><div class="modal-preview" id="modalPreview"></div><p>Abra o mini-site completo em uma página separada ou volte para o simulador para pedir um projeto inspirado nele.</p><div class="modal-actions"><a class="btn btn-primary" id="modalDemo" href="#">Ver exemplo →</a><a class="btn btn-dark" id="modalQuote" href="#simulador">Quero um desse →</a></div></div></div>
+<div class="toast" id="toast">Copiado!</div>
+<script src="script.js"></script>
+</body></html>
