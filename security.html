@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXXA Security</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #05060a;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    .security-header {
+      padding: 22px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .security-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg,#39dcff,#8b5cf6);
+      font-size: 21px;
+    }
+
+    .security-header strong {
+      font-size: 18px;
+    }
+
+    .security-header span {
+      display: block;
+      color: #8d98aa;
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .security-container {
+      width: min(900px, 92%);
+      margin: 0 auto;
+      padding: 55px 0 70px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .intro .shield {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    .intro h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 6vw, 48px);
+    }
+
+    .intro p {
+      margin: 0 auto;
+      max-width: 620px;
+      color: #9ba5b5;
+      line-height: 1.6;
+    }
+
+    .chat {
+      background: #0b0e15;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 20px 70px rgba(0,0,0,.35);
+    }
+
+    .bot-message {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .bot-icon {
+      min-width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg,#39dcff,#8b5cf6);
+    }
+
+    .message {
+      background: #141925;
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 16px;
+      padding: 14px 16px;
+      line-height: 1.55;
+      color: #dfe5ef;
+    }
+
+    .questions {
+      display: grid;
+      gap: 10px;
+    }
+
+    .question {
+      width: 100%;
+      text-align: left;
+      border: 1px solid rgba(255,255,255,.08);
+      background: #10141e;
+      color: #fff;
+      padding: 15px 16px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .question:hover {
+      border-color: #39dcff;
+      transform: translateY(-1px);
+    }
+
+    .question::before {
+      content: "›";
+      color: #39dcff;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .conversation {
+      margin-top: 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .user-message {
+      justify-self: end;
+      max-width: 85%;
+      background: linear-gradient(135deg,#146b91,#56359a);
+      padding: 13px 16px;
+      border-radius: 16px 16px 4px 16px;
+      line-height: 1.5;
+    }
+
+    .answer {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .answer .message {
+      max-width: 85%;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 25px;
+      color: #9ba5b5;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      color: #39dcff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="security-header">
+    <div class="security-logo">🛡️</div>
+
+    <div>
+      <strong>NEXXA Security</strong>
+      <span>Central de transparência e segurança</span>
+    </div>
+  </header>
+
+  <main class="security-container">
+
+    <section class="intro">
+      <div class="shield">🛡️</div>
+
+      <h1>NEXXA Security</h1>
+
+      <p>
+        Tire suas dúvidas sobre contratos, pagamentos, desenvolvimento
+        e tudo que envolve a criação do seu site com a NEXXA.
+      </p>
+    </section>
+
+    <section class="chat">
+
+      <div class="bot-message">
+        <div class="bot-icon">N</div>
+
+        <div class="message">
+          Olá! 👋<br>
+          Eu sou o <strong>NEXXA Security</strong>.
+          Selecione uma pergunta abaixo para entender melhor
+          como trabalhamos.
+        </div>
+      </div>
+
+      <div class="questions">
+
+        <button class="question" data-question="Como eu posso confiar na NEXXA?">
+          Como eu posso confiar na NEXXA?
+        </button>
+
+        <button class="question" data-question="Preciso pagar tudo antes?">
+          Preciso pagar tudo antes?
+        </button>
+
+        <button class="question" data-question="Existe contrato?">
+          Existe contrato?
+        </button>
+
+        <button class="question" data-question="Como funciona o pagamento?">
+          Como funciona o pagamento?
+        </button>
+
+        <button class="question" data-question="E se eu não gostar do resultado?">
+          E se eu não gostar do resultado?
+        </button>
+
+        <button class="question" data-question="Quanto tempo demora para meu site ficar pronto?">
+          Quanto tempo demora para meu site ficar pronto?
+        </button>
+
+        <button class="question" data-question="Vocês fazem alterações no site?">
+          Vocês fazem alterações no site?
+        </button>
+
+        <button class="question" data-question="Meu site fica realmente meu?">
+          Meu site fica realmente meu?
+        </button>
+
+        <button class="question" data-question="Como funciona a hospedagem?">
+          Como funciona a hospedagem?
+        </button>
+
+      </div>
+
+      <div id="conversation" class="conversation"></div>
+
+    </section>
+
+    <a href="index.html" class="back">← Voltar para a NEXXA</a>
+
+  </main>
+
+  <script>
+    const answers = {
+
+      "Como eu posso confiar na NEXXA?":
+        "Você pode confiar porque trabalhamos com transparência em todas as etapas. O projeto é combinado com você, temos contrato e não pedimos o pagamento integral antes da conclusão do site.",
+
+      "Preciso pagar tudo antes?":
+        "Não. A proposta da NEXXA é trabalhar com um processo mais seguro para o cliente, evitando que você precise pagar todo o valor antes de o projeto ser concluído.",
+
+      "Existe contrato?":
+        "Sim. O contrato serve para deixar claro o que foi combinado, os valores, as etapas do projeto e as responsabilidades de cada lado.",
+
+      "Como funciona o pagamento?":
+        "O pagamento é combinado antes do início do projeto. A ideia é trabalhar com condições claras e seguras, sem exigir que o cliente pague todo o projeto antecipadamente.",
+
+      "E se eu não gostar do resultado?":
+        "Durante o desenvolvimento, você acompanha o projeto e pode solicitar os ajustes previstos no combinado. O objetivo é entregar um site alinhado ao que foi definido com você.",
+
+      "Quanto tempo demora para meu site ficar pronto?":
+        "O prazo depende do tamanho e da complexidade do projeto. Depois de entender o que você precisa, informamos uma estimativa de prazo antes de começar.",
+
+      "Vocês fazem alterações no site?":
+        "Sim. As alterações que fazem parte do projeto são combinadas previamente. Assim você sabe exatamente o que está incluído antes de começar.",
+
+      "Meu site fica realmente meu?":
+        "Sim. O projeto é desenvolvido para o seu negócio. Os detalhes sobre arquivos, domínio, hospedagem e eventuais serviços utilizados ficam definidos no contrato.",
+
+      "Como funciona a hospedagem?":
+        "A hospedagem é o serviço que mantém seu site disponível na internet. Podemos orientar você sobre a melhor opção para o projeto e deixar tudo definido antes da publicação."
+
+    };
+
+    const buttons = document.querySelectorAll(".question");
+    const conversation = document.getElementById("conversation");
+
+    buttons.forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        const question = button.dataset.question;
+        const answer = answers[question];
+
+        const userMessage = document.createElement("div");
+        userMessage.className = "user-message";
+        userMessage.textContent = question;
+
+        const answerBox = document.createElement("div");
+        answerBox.className = "answer";
+
+        answerBox.innerHTML = `
+          <div class="bot-icon">N</div>
+          <div class="message">${answer}</div>
+        `;
+
+        conversation.appendChild(userMessage);
+        conversation.appendChild(answerBox);
+
+        answerBox.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+
+      });
+
+    });
+  </script>
+
+</body>
+</html>
