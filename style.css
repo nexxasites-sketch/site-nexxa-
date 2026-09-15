@@ -1277,3 +1277,25 @@ footer {
         padding: 35px 25px;
     }
   }
+/* =========================
+   NEXXA PARTICLES
+========================= */
+
+.particle-nexxa {
+    position: relative;
+    overflow: hidden;
+    background: #05060a !important;
+    background-image: none !important;
+}
+
+.particle-nexxa:after {
+    display: none !important;
+}
+
+#nexxaParticles {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
